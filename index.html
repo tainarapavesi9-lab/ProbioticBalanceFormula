@@ -5,11 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Metatags Primárias -->
+    <!-- SEO ORGÂNICO E METATAGS -->
     <title>Site Oficial Bioma® | Saúde Intestinal Avançada e Suporte ao Microbioma</title>
     <meta name="title" content="Site Oficial Bioma® | Saúde Intestinal Avançada e Suporte ao Microbioma">
-    <meta name="description" content="Descubra Bioma: A fórmula premium 3-em-1 de probióticos, prebióticos e pós-bióticos para saúde intestinal, suporte ao metabolismo e energia.">
-    
+    <meta name="description" content="Descubra Bioma: A fórmula premium 3-em-1 de probióticos, prebióticos e pós-bióticos para saúde intestinal, suporte ao metabolismo e energia. Made in USA.">
+    <meta name="keywords" content="Bioma Probiótico, Suplemento Intestinal, Microbioma, Gerenciamento de Peso, Prebióticos Pós-bióticos, Bioma Reviews, Comprar Bioma">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Bioma Health">
+    <link rel="canonical" href="https://www.thebestprobiotics.vercel.app/">
+
+    <!-- Open Graph / Facebook (SEO Social) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.thebestprobiotics.vercel.app/">
+    <meta property="og:title" content="Bioma® | Restaure o Equilíbrio da sua Saúde Intestinal">
+    <meta property="og:description" content="Suporte avançado ao microbioma com cápsulas de liberação retardada para máxima absorção. Veja por que milhares confiam no Bioma.">
+    <meta property="og:image" content="images/og-image.webp">
+
+    <!-- Twitter (SEO Social) -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.thebestprobiotics.vercel.app/">
+    <meta property="twitter:title" content="Bioma® | Saúde Intestinal e Suporte ao Microbioma">
+    <meta property="twitter:description" content="Suporte 3-em-1 para um intestino mais saudável. Digestão mais rápida e metabolismo equilibrado em uma fórmula clínica.">
+    <meta property="twitter:image" content="images/og-image.webp">
+
+    <!-- Dados Estruturados JSON-LD (SEO de Produto) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Bioma Probiotic",
+      "image": ["https://www.thebestprobiotics.vercel.app/images/bioma-bottle.webp"],
+      "description": "Bioma é uma fórmula avançada de probióticos para suporte intestinal e metabólico.",
+      "brand": { "@type": "Brand", "name": "Bioma Health" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "12540"
+      }
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/bioma-fav.png">
 
@@ -64,276 +99,194 @@
         }
     </script>
     <style>
-        body {
-            background-color: #fcfdfe;
-            color: #071f16;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Efeito de granulação ao fundo */
-        .noise-bg::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: url("https://grainy-gradients.vercel.app/noise.svg");
-            opacity: 0.025;
-            pointer-events: none;
-            z-index: 9999;
-        }
-
-        .authority-gradient {
-            background: linear-gradient(135deg, #071f16 0%, #0f3325 50%, #1a4f3b 100%);
-        }
-
-        .glass-header {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .reveal-on-scroll.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .glow-blob {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(93, 196, 165, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            filter: blur(80px);
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        @keyframes pulse-ring {
-            0% { box-shadow: 0 0 0 0 rgba(7, 31, 22, 0.3); }
-            70% { box-shadow: 0 0 0 15px rgba(7, 31, 22, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(7, 31, 22, 0); }
-        }
-
-        .cta-pulse {
-            animation: pulse-ring 2s infinite;
-        }
-
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
+        body { background-color: #fcfdfe; color: #071f16; -webkit-font-smoothing: antialiased; }
+        .noise-bg::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url("https://grainy-gradients.vercel.app/noise.svg"); opacity: 0.025; pointer-events: none; z-index: 9999; }
+        .authority-gradient { background: linear-gradient(135deg, #071f16 0%, #0f3325 50%, #1a4f3b 100%); }
+        .glass-header { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .reveal-on-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-on-scroll.active { opacity: 1; transform: translateY(0); }
+        .glow-blob { position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(93, 196, 165, 0.1) 0%, transparent 70%); border-radius: 50%; filter: blur(80px); z-index: -1; pointer-events: none; }
+        @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(7, 31, 22, 0.3); } 70% { box-shadow: 0 0 0 15px rgba(7, 31, 22, 0); } 100% { box-shadow: 0 0 0 0 rgba(7, 31, 22, 0); } }
+        .cta-pulse { animation: pulse-ring 2s infinite; }
+        details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 
 <body class="font-sans noise-bg">
 
     <!-- BARRA DE ALERTA -->
-    <div class="bg-brand-950 text-white py-2 px-4 shadow-md relative z-[110] text-center">
-        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-[10px] sm:text-xs font-bold tracking-widest uppercase">
-            <span class="bg-accent-500 text-brand-950 px-2 py-0.5 rounded-full animate-pulse">OFERTA LIMITADA</span>
-            <div class="flex items-center space-x-1.5">
-                <svg class="w-3.5 h-3.5 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
+    <div class="bg-brand-950 text-white py-2.5 px-4 shadow-md relative z-[110] text-center">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-bold tracking-wide uppercase">
+            <span class="bg-accent-500 text-brand-950 px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs animate-pulse">APENAS HOJE</span>
+            <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" /></svg>
                 <span>Frete Grátis</span>
             </div>
             <div class="hidden sm:block w-px h-3 bg-brand-800"></div>
-            <div class="flex items-center space-x-1.5">
-                <svg class="w-3.5 h-3.5 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                 <span>Garantia de 60 Dias</span>
             </div>
         </div>
     </div>
 
     <!-- NAVEGAÇÃO -->
-    <nav class="sticky top-0 glass-header py-4 z-[100] border-b border-brand-100/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
-            <a href="#" class="flex items-center">
+    <nav class="sticky top-0 glass-header py-5 z-[100] border-b border-brand-100/50">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="/" class="flex items-center">
                 <img src="images/bioma-logo.svg" alt="Logo Bioma" class="h-8 sm:h-10 w-auto">
             </a>
-            <div class="hidden md:flex space-x-10 text-[11px] font-bold text-brand-900 uppercase tracking-widest">
-                <a href="#formula" class="hover:text-brand-500 transition-colors">A Fórmula</a>
+            <div class="hidden md:flex space-x-8 text-sm font-bold text-brand-900 uppercase tracking-widest">
+                <a href="#how-to-start" class="hover:text-brand-500 transition-colors">Abordagem</a>
                 <a href="#testimonials" class="hover:text-brand-500 transition-colors">Depoimentos</a>
                 <a href="#faq" class="hover:text-brand-500 transition-colors">FAQ</a>
             </div>
-            <a href="https://www.knownwalk.com/2JCZKZ1X/W7KP6BZ/" class="bg-brand-950 text-white px-7 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-brand-700 transition-all shadow-xl shadow-brand-950/10">
+            <a href="https://www.knownwalk.com/2JCZKZ1X/W7KP6BZ/" class="bg-brand-950 text-white px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-brand-800 transition-all shadow-lg shadow-brand-950/20">
                 Peça Agora
             </a>
         </div>
     </nav>
 
     <!-- SEÇÃO HERO -->
-    <section class="relative pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#fafcfb]">
-        <div class="glow-blob top-0 right-0 -translate-y-1/2 translate-x-1/4"></div>
-        <div class="glow-blob bottom-0 left-0 translate-y-1/4 -translate-x-1/4"></div>
+    <section class="relative pt-20 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-[#fafcfb]">
+        <div class="glow-blob top-0 right-0 -translate-y-1/2 translate-x-1/4 animate-pulse-slow"></div>
+        <div class="glow-blob bottom-0 left-0 translate-y-1/4 -translate-x-1/4 animate-pulse-slow"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Conteúdo de Texto -->
-                <div class="max-w-2xl text-center lg:text-left">
-                    <div class="inline-flex items-center space-x-2 bg-brand-50 border border-brand-100 px-3 py-1 rounded-full text-brand-600 text-[10px] font-bold uppercase tracking-widest mb-6 animate-fade-in-up">
-                        <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
-                        <span>Suporte ao Microbioma de Nível Clínico</span>
-                    </div>
-                    <h1 class="font-display text-4xl sm:text-5xl lg:text-7xl font-extrabold text-brand-950 leading-[1.1] tracking-tight animate-fade-in-up">
-                        Desbloqueie o seu <br />
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-900">Intestino mais Saudável.</span>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="max-w-2xl">
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-950 leading-tight tracking-tight opacity-0 animate-fade-in-up">
+                        Reequilibre seu microbioma. <br />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-800">Restaure seu bem-estar.</span>
                     </h1>
 
-                    <p class="mt-8 text-lg text-gray-600 leading-relaxed animate-fade-in-up" style="animation-delay: 0.1s">
-                        Bioma é a fórmula avançada 3-em-1 que combina probióticos, prebióticos e pós-bióticos, projetada para atingir a causa raiz do metabolismo lento e desconfortos digestivos.
+                    <p class="mt-6 text-lg sm:text-xl text-gray-700 leading-relaxed opacity-0 animate-fade-in-up" style="animation-delay: 100ms">
+                        <strong>Bioma</strong> é a solução avançada para quem busca 
+                        <strong>equilíbrio intestinal</strong>, suporte à digestão e gerenciamento natural do metabolismo.
                     </p>
 
                     <!-- Imagem Mobile -->
-                    <div class="lg:hidden my-12 animate-fade-in-up" style="animation-delay: 0.2s">
-                        <img src="images/bioma-bottle.webp" alt="Frasco Bioma" class="w-full max-w-[320px] mx-auto drop-shadow-[0_35px_60px_rgba(20,56,42,0.3)]">
+                    <div class="lg:hidden my-10 relative w-full opacity-0 animate-fade-in-up" style="animation-delay: 200ms">
+                        <div class="flex items-center justify-center drop-shadow-[0_20px_50px_rgba(20,56,42,0.3)]">
+                            <img src="images/bioma-bottle.webp" alt="Frasco Bioma" class="object-contain w-full max-h-[400px]">
+                        </div>
                     </div>
 
-                    <div class="mt-10 space-y-4 animate-fade-in-up" style="animation-delay: 0.2s">
-                        <div class="flex flex-col sm:flex-row items-center gap-4">
-                            <a href="https://www.knownwalk.com/2JCZKZ1X/W7KP6BZ/?uid=4668" class="w-full sm:w-auto px-10 py-5 text-lg font-bold text-white authority-gradient rounded-full shadow-2xl hover:scale-105 transition-all duration-300 cta-pulse">
-                                Iniciar Meu Quiz
-                            </a>
-                        </div>
-                        <p class="text-xs text-gray-500 font-medium">Junte-se a mais de 12.500 usuários equilibrando o microbioma hoje.</p>
+                    <ul class="mt-8 space-y-4 opacity-0 animate-fade-in-up" style="animation-delay: 200ms">
+                        <li class="flex items-start">
+                            <div class="bg-brand-50 p-2 rounded-xl shrink-0 mt-0.5 shadow-sm">
+                                <svg class="h-4 w-4 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7" /></svg>
+                            </div>
+                            <span class="ml-4 text-gray-800 font-medium">Digestão eficiente e regularidade</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-brand-50 p-2 rounded-xl shrink-0 mt-0.5 shadow-sm">
+                                <svg class="h-4 w-4 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7" /></svg>
+                            </div>
+                            <span class="ml-4 text-gray-800 font-medium">Redução de inchaço e gases</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-brand-50 p-2 rounded-xl shrink-0 mt-0.5 shadow-sm">
+                                <svg class="h-4 w-4 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7" /></svg>
+                            </div>
+                            <span class="ml-4 text-gray-800 font-medium">Energia estável durante todo o dia</span>
+                        </li>
+                    </ul>
+
+                    <div class="mt-10 opacity-0 animate-fade-in-up" style="animation-delay: 300ms">
+                        <a href="https://www.knownwalk.com/2JCZKZ1X/W7KP6BZ/" class="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 text-lg font-bold text-white authority-gradient rounded-full shadow-2xl hover:scale-105 transition-all duration-300 cta-pulse">
+                            Quero Começar Agora
+                        </a>
                     </div>
                 </div>
 
                 <!-- Imagem Desktop -->
-                <div class="hidden lg:block relative animate-float">
-                    <img src="images/bioma-bottle.webp" alt="Frasco Bioma" class="w-full max-w-[500px] mx-auto drop-shadow-[0_50px_100px_rgba(20,56,42,0.25)]">
-                    
-                    <!-- Etiquetas Flutuantes -->
-                    <div class="absolute top-1/4 -left-12 bg-white p-4 rounded-2xl shadow-xl flex items-center space-x-3 border border-brand-50 animate-pulse">
-                        <div class="bg-brand-500 p-2 rounded-lg text-white">
-                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M13 10V3L4 14h7v7l11-11h-9z"/></svg>
-                        </div>
-                        <span class="text-xs font-bold text-brand-950">Mais Energia</span>
-                    </div>
-                    <div class="absolute bottom-1/4 -right-8 bg-white p-4 rounded-2xl shadow-xl flex items-center space-x-3 border border-brand-50">
-                        <div class="bg-accent-500 p-2 rounded-lg text-white">
-                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 12l2 2 4-4"/></svg>
-                        </div>
-                        <span class="text-xs font-bold text-brand-950">Menos Inchaço</span>
+                <div class="hidden lg:block relative w-full opacity-0 animate-fade-in-up" style="animation-delay: 200ms">
+                    <div class="flex items-center justify-center drop-shadow-[0_45px_70px_rgba(20,56,42,0.25)] animate-float">
+                        <img src="images/bioma-bottle.webp" alt="Frasco Bioma" class="object-contain w-full h-auto max-h-[620px]">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LOGOS DE CONFIANÇA -->
+    <!-- PROVA SOCIAL -->
     <div class="bg-white py-12 border-y border-brand-50">
-        <div class="max-w-7xl mx-auto px-4 overflow-hidden">
-            <p class="text-center text-[10px] font-bold text-brand-900/40 uppercase tracking-[0.4em] mb-10">Recomendado por Especialistas em</p>
-            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
-                <span class="text-xl font-display font-black tracking-tighter">HealthLine</span>
-                <span class="text-xl font-display font-black tracking-tighter">WELL+GOOD</span>
-                <span class="text-xl font-display font-black tracking-tighter">VOGUE</span>
-                <span class="text-xl font-display font-black tracking-tighter">Women'sHealth</span>
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-[10px] font-bold text-brand-900/40 uppercase tracking-[0.3em] mb-8">Destaque nas principais mídias de saúde</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 sm:gap-20 opacity-30 grayscale">
+                <span class="text-lg font-display font-black tracking-tighter">HealthLine</span>
+                <span class="text-lg font-display font-black tracking-tighter">Well+Good</span>
+                <span class="text-lg font-display font-black tracking-tighter">VOGUE</span>
+                <span class="text-lg font-display font-black tracking-tighter">Women'sHealth</span>
             </div>
         </div>
     </div>
 
-    <!-- CARDS DE OPÇÃO (DUAS OPÇÕES PRINCIPAIS) -->
-    <section id="how-to-start" class="py-24 bg-white relative">
+    <!-- SEÇÃO DE OPÇÕES (DTC E QUIZ) -->
+    <section id="how-to-start" class="py-24 bg-white relative reveal-on-scroll">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16 reveal-on-scroll">
-                <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-brand-950 tracking-tight">Como você gostaria de começar?</h2>
-                <p class="mt-4 text-gray-500 text-lg">Escolha o seu caminho personalizado para um microbioma melhor.</p>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-display text-4xl sm:text-5xl font-extrabold text-brand-950 tracking-tight">Como prefere começar?</h2>
+                <p class="mt-4 text-lg text-gray-600">Selecione uma das opções abaixo para iniciar sua jornada.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Opção 1: Compra Direta -->
-                <div class="group relative bg-white rounded-[2.5rem] p-8 md:p-12 border-2 border-brand-800 hover:border-brand-500 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 flex flex-col justify-between reveal-on-scroll">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-950 text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest whitespace-nowrap shadow-lg">Oferta Direta</div>
+                <!-- Opção 1: Buy Bioma Direct -->
+                <div class="group bg-white rounded-[3rem] p-8 md:p-12 border-2 border-brand-800 hover:border-brand-500 transition-all duration-500 hover:shadow-2xl flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-5 right-5"><span class="bg-brand-950 text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">35% OFF HOJE</span></div>
                     <div>
                         <div class="w-16 h-16 bg-brand-50 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-                            <svg class="w-8 h-8 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                            <svg class="w-8 h-8 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
                         </div>
-                        <h3 class="text-3xl font-bold text-brand-950 mb-4">Compra Direta</h3>
-                        <p class="text-gray-500 leading-relaxed mb-10">Receba a fórmula clínica de Bioma® diretamente na sua casa. Comece hoje mesmo com 35% de desconto exclusivo.</p>
+                        <h3 class="text-3xl font-display font-extrabold text-brand-950 mb-4 tracking-tight">Buy Bioma Direct</h3>
+                        <p class="text-gray-600 mb-10 leading-relaxed">Get Bioma’s clinically designed formula delivered straight to your door. Start supporting your gut health today and save up to 35% on your order.</p>
                     </div>
-                    <a href="https://www.knownwalk.com/2JCZKZ1X/W7KP6BZ/" class="w-full flex items-center justify-center py-5 px-6 bg-brand-950 text-white rounded-2xl font-bold text-base hover:bg-brand-600 transition-colors shadow-xl">
-                        Comprar Agora – 35% OFF
-                    </a>
+                    <a href="https://www.knownwalk.com/2JCZKZ1X/W7KP6BZ/" class="w-full flex items-center justify-center py-5 px-6 bg-brand-950 text-white rounded-2xl font-bold text-base shadow-xl transition-transform hover:scale-[1.02]">Start Your Gut Reset – Save 35%</a>
                 </div>
 
-                <!-- Opção 2: Quiz -->
-                <div class="group relative bg-white rounded-[2.5rem] p-8 md:p-12 border border-gray-100 hover:border-brand-500 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 flex flex-col justify-between reveal-on-scroll" style="transition-delay: 0.1s">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent-500 text-brand-950 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest whitespace-nowrap shadow-lg">Recomendado</div>
+                <!-- Opção 2: Find Your Gut Type (Quiz) -->
+                <div class="group bg-white rounded-[3rem] p-8 md:p-12 border border-gray-100 hover:border-brand-500 transition-all duration-500 hover:shadow-2xl flex flex-col justify-between relative">
+                    <div class="absolute top-5 right-5"><span class="bg-accent-500 text-brand-950 text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">PERSONALIZADO</span></div>
                     <div>
                         <div class="w-16 h-16 bg-brand-50 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-                            <svg class="w-8 h-8 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                            <svg class="w-8 h-8 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>
                         </div>
-                        <h3 class="text-3xl font-bold text-brand-950 mb-4">Quiz Intestinal</h3>
-                        <p class="text-gray-500 leading-relaxed mb-10">Não sabe por onde começar? Nosso quiz avalia seu microbioma e recomenda a rotina perfeita para o seu perfil.</p>
+                        <h3 class="text-3xl font-display font-extrabold text-brand-950 mb-4 tracking-tight">Find Your Gut Type</h3>
+                        <p class="text-gray-600 mb-10 leading-relaxed">Not sure where to start? Take our quick gut health quiz to discover what may be blocking your weight loss and get a personalized recommendation.</p>
                     </div>
-                    <a href="https://www.knownwalk.com/2JCZKZ1X/W7KP6BZ/?uid=4668" class="w-full flex items-center justify-center py-5 px-6 authority-gradient text-white rounded-2xl font-bold text-base shadow-xl">
-                        Iniciar Quiz Grátis
-                    </a>
+                    <a href="https://www.knownwalk.com/2JCZKZ1X/W7KP6BZ/?uid=4668" class="w-full flex items-center justify-center py-5 px-6 authority-gradient text-white rounded-2xl font-bold text-base shadow-xl transition-transform hover:scale-[1.02]">Take the 30-Second Gut Quiz</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DEPOIMENTOS -->
-    <section id="testimonials" class="py-24 bg-gray-50 overflow-hidden">
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-20 reveal-on-scroll">
-                <h2 class="font-display text-4xl font-extrabold text-brand-950">Resultados Reais, Pessoas Reais.</h2>
-                <div class="mt-4 flex justify-center space-x-1">
-                    <svg class="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    <svg class="w-6 h-6 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                </div>
-                <p class="mt-2 text-xs font-bold text-gray-400 uppercase tracking-widest">Média de 4.9/5 Estrelas</p>
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-extrabold text-brand-950">Milhares de Vidas Transformadas</h2>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Depoimento 1 -->
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all reveal-on-scroll">
-                    <p class="text-gray-600 leading-relaxed mb-8 italic">"Depois de anos tentando todos os probióticos da prateleira, Bioma foi o único que realmente acalmou meu estômago. Sinto-me mais leve e focada."</p>
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm">
+                    <p class="text-gray-600 mb-6 italic">"Finalmente algo que realmente reduziu meu inchaço abdominal. Me sinto muito mais leve!"</p>
                     <div class="flex items-center">
-                        <img src="images/testimonial-1.png" alt="Sarah" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <h4 class="font-bold text-brand-950 text-sm">Sarah Jenkins</h4>
-                            <p class="text-[10px] text-brand-500 font-bold uppercase tracking-widest flex items-center">
-                                <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                                Cliente Verificada
-                            </p>
-                        </div>
+                        <img src="images/testimonial-1.png" alt="Sarah" class="w-10 h-10 rounded-full mr-3 ring-2 ring-brand-50">
+                        <span class="font-bold text-sm">Sarah Jenkins</span>
                     </div>
                 </div>
-                <!-- Depoimento 2 -->
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all reveal-on-scroll" style="transition-delay: 0.1s">
-                    <p class="text-gray-600 leading-relaxed mb-8 italic">"A maior mudança não foi apenas na digestão, foi na minha energia. Acabaram os desânimos à tarde e aquela sensação de peso após o almoço."</p>
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm">
+                    <p class="text-gray-600 mb-6 italic">"Minha disposição física mudou completamente em duas semanas. Excelente produto."</p>
                     <div class="flex items-center">
-                        <img src="images/testimonial-2.png" alt="Mark" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <h4 class="font-bold text-brand-950 text-sm">Mark Thompson</h4>
-                            <p class="text-[10px] text-brand-500 font-bold uppercase tracking-widest flex items-center">
-                                <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                                Cliente Verificado
-                            </p>
-                        </div>
+                        <img src="images/testimonial-2.png" alt="Emily" class="w-10 h-10 rounded-full mr-3 ring-2 ring-brand-50">
+                        <span class="font-bold text-sm">Emily Carter</span>
                     </div>
                 </div>
-                <!-- Depoimento 3 -->
-                <div class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all reveal-on-scroll" style="transition-delay: 0.2s">
-                    <p class="text-gray-600 leading-relaxed mb-8 italic">"Tomo todas as manhãs com água. Em duas semanas minhas roupas vestem melhor e me sinto mais no controle do meu apetite. Recomendo muito."</p>
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm">
+                    <p class="text-gray-600 mb-6 italic">"O suporte ao metabolismo é real. Menos desejos por doces e mais regularidade."</p>
                     <div class="flex items-center">
-                        <img src="images/testimonial-3.png" alt="Elena" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <h4 class="font-bold text-brand-950 text-sm">Elena Rodriguez</h4>
-                            <p class="text-[10px] text-brand-500 font-bold uppercase tracking-widest flex items-center">
-                                <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                                Cliente Verificada
-                            </p>
-                        </div>
+                        <img src="images/testimonial-3.png" alt="Daniel" class="w-10 h-10 rounded-full mr-3 ring-2 ring-brand-50">
+                        <span class="font-bold text-sm">Daniel Johnson</span>
                     </div>
                 </div>
             </div>
@@ -343,144 +296,85 @@
     <!-- FAQ -->
     <section id="faq" class="py-24 authority-gradient text-white">
         <div class="max-w-3xl mx-auto px-4">
-            <h2 class="font-display text-4xl font-extrabold text-center mb-16">Perguntas Frequentes</h2>
+            <h2 class="font-display text-4xl font-extrabold text-center mb-16">Dúvidas Frequentes</h2>
             <div class="space-y-4">
                 <details class="group bg-brand-900/60 rounded-2xl border border-brand-800 overflow-hidden transition-all">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none group-hover:bg-brand-800/50">
-                        O que torna o Bioma® diferente de outros probióticos?
-                        <svg class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none hover:bg-brand-800/50">
+                        O que é Bioma® e como ele ajuda?
+                        <svg class="h-6 w-6 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </summary>
-                    <div class="p-6 pt-0 text-brand-100/80 leading-relaxed border-t border-brand-800/50 mt-1">
-                        A maioria dos probióticos é destruída pelo ácido gástrico. Bioma® usa tecnologia de liberação retardada para garantir que as cepas cheguem vivas ao intestino, combinadas com prebióticos para nutri-las e pós-bióticos para suporte metabólico imediato.
+                    <div class="p-6 pt-0 text-brand-100 leading-relaxed border-t border-brand-800/50 mt-1">
+                        Bioma® é um probiótico premium que utiliza tecnologia de liberação retardada para garantir que as bactérias benéficas cheguem vivas ao seu intestino, promovendo equilíbrio metabólico e digestivo.
                     </div>
                 </details>
-
                 <details class="group bg-brand-900/60 rounded-2xl border border-brand-800 overflow-hidden transition-all">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none group-hover:bg-brand-800/50">
-                        Quanto tempo até eu notar diferença?
-                        <svg class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none hover:bg-brand-800/50">
+                        Qual o tempo para ver resultados?
+                        <svg class="h-6 w-6 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </summary>
-                    <div class="p-6 pt-0 text-brand-100/80 leading-relaxed border-t border-brand-800/50 mt-1">
-                        Muitos relatam menos inchaço em 3-5 dias, mas a restauração completa do microbioma leva de 6 a 8 semanas de uso consistente. É por isso que o combo de 3 meses é o mais popular.
-                    </div>
-                </details>
-
-                <details class="group bg-brand-900/60 rounded-2xl border border-brand-800 overflow-hidden transition-all">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold select-none group-hover:bg-brand-800/50">
-                        Bioma® é vegano e livre de alérgenos?
-                        <svg class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </summary>
-                    <div class="p-6 pt-0 text-brand-100/80 leading-relaxed border-t border-brand-800/50 mt-1">
-                        Sim, nossas cápsulas são 100% vegetais, não-transgênicas (GMO-free), sem glúten e fabricadas nos EUA seguindo rigorosos padrões GMP.
+                    <div class="p-6 pt-0 text-brand-100 leading-relaxed border-t border-brand-800/50 mt-1">
+                        Muitos clientes sentem menos inchaço nos primeiros 5 dias. A restauração completa do microbioma costuma levar de 6 a 8 semanas de uso consistente.
                     </div>
                 </details>
             </div>
         </div>
     </section>
 
-    <!-- RODAPÉ -->
+    <!-- FOOTER -->
     <footer class="bg-gray-50 pt-20 pb-10 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-                <div class="col-span-1 md:col-span-2">
-                    <h3 class="font-display font-black text-2xl mb-6">BIOMA<span class="text-brand-500">®</span></h3>
-                    <p class="text-gray-500 max-w-sm leading-relaxed">Dedicados à ciência do eixo intestino-cérebro-metabolismo. Acreditamos que uma vida saudável começa com um microbioma equilibrado.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div>
+                    <h4 class="font-display font-bold text-2xl mb-5">Bioma Health</h4>
+                    <p class="text-gray-500 text-sm">Suporte científico para seu microbioma.</p>
                 </div>
                 <div>
-                    <h4 class="font-bold text-gray-900 mb-6">Informação</h4>
+                    <h4 class="font-bold text-lg mb-5">Links</h4>
                     <ul class="space-y-3 text-sm text-gray-500">
-                        <li><a href="#" onclick="openModal('modal-references')" class="hover:text-brand-600 transition-colors">Ciência</a></li>
-                        <li><a href="#" onclick="openModal('modal-help')" class="hover:text-brand-600 transition-colors">Contato</a></li>
-                        <li><a href="#" class="hover:text-brand-600 transition-colors">Afiliados</a></li>
+                        <li><button onclick="openModal('modal-references')" class="hover:text-brand-600">Referências</button></li>
+                        <li><button onclick="openModal('modal-help')" class="hover:text-brand-600">Ajuda</button></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold text-gray-900 mb-6">Jurídico</h4>
+                    <h4 class="font-bold text-lg mb-5">Jurídico</h4>
                     <ul class="space-y-3 text-sm text-gray-500">
-                        <li><a href="#" onclick="openModal('modal-privacy')" class="hover:text-brand-600 transition-colors">Política de Privacidade</a></li>
-                        <li><a href="#" onclick="openModal('modal-terms')" class="hover:text-brand-600 transition-colors">Termos de Uso</a></li>
+                        <li><button onclick="openModal('modal-privacy')" class="hover:text-brand-600">Privacidade</button></li>
+                        <li><button onclick="openModal('modal-terms')" class="hover:text-brand-600">Termos</button></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="pt-8 border-t border-gray-200 text-center">
-                <p class="text-xs text-gray-400">&copy; 2026 Bioma Health. Todos os direitos reservados.</p>
-            </div>
+            <div class="text-center text-xs text-gray-400">&copy; 2026 Bioma Health. Distribuidor Autorizado.</div>
         </div>
     </footer>
 
-    <!-- AVISO FDA -->
-    <div class="bg-gray-100 py-10 px-4 text-center">
-        <div class="max-w-4xl mx-auto space-y-4">
-            <p class="text-[10px] text-gray-400 leading-relaxed">
-                *As declarações neste site não foram avaliadas pela ANVISA ou FDA. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados não são típicos e podem variar.
+    <!-- AVISO LEGAL -->
+    <section class="bg-gray-900 py-12 text-center px-4">
+        <div class="max-w-6xl mx-auto space-y-4">
+            <p class="text-[11px] text-gray-500 leading-relaxed">
+                As informações fornecidas neste site não substituem o aconselhamento médico profissional. Sempre procure orientação do seu médico. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados variam de acordo com o esforço individual e metabolismo.
             </p>
         </div>
-    </div>
+    </section>
 
     <!-- MODAL OVERLAY -->
-    <div id="modal-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[200] hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
-        
-        <!-- Conteúdo do Modal -->
-        <div id="modal-container" class="bg-white rounded-[2rem] w-full max-w-2xl max-h-[85vh] overflow-y-auto shadow-2xl transform scale-95 transition-all duration-300 relative">
-            <button onclick="closeModal()" class="absolute top-6 right-6 p-2 text-gray-400 hover:text-gray-900 hover:bg-gray-100 rounded-full transition-all">
-                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-            </button>
-            
-            <div id="modal-content-area" class="p-10">
-                <!-- Conteúdo injetado via JS -->
-            </div>
+    <div id="modal-overlay" class="fixed inset-0 bg-black/70 backdrop-blur-md z-[200] hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div id="modal-container" class="bg-white rounded-3xl w-full max-w-2xl max-h-[85vh] overflow-y-auto shadow-2xl relative">
+            <button onclick="closeModal()" class="absolute top-6 right-6 p-2 text-gray-400 hover:text-gray-900"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+            <div id="modal-content-area" class="p-10 text-gray-600 text-sm"></div>
         </div>
     </div>
 
     <script>
-        // Lógica de Revelação ao Rolar
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
         }, { threshold: 0.1 });
-
         document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
 
-        // Dados dos Modais
         const modalData = {
-            'modal-privacy': `
-                <h3 class="text-3xl font-display font-bold mb-6">Política de Privacidade</h3>
-                <div class="space-y-4 text-gray-600 text-sm leading-relaxed">
-                    <p>Valorizamos sua privacidade. Coletamos apenas informações necessárias para cumprir seus pedidos.</p>
-                    <h4 class="font-bold text-gray-900">1. Dados</h4>
-                    <p>Coletamos nome, endereço e e-mail. Dados de pagamento são processados de forma segura por terceiros.</p>
-                </div>
-            `,
-            'modal-terms': `
-                <h3 class="text-3xl font-display font-bold mb-6">Termos de Uso</h3>
-                <div class="space-y-4 text-gray-600 text-sm leading-relaxed">
-                    <p>Ao usar este site, você concorda com nossos termos. Bioma é um suplemento dietético.</p>
-                </div>
-            `,
-            'modal-references': `
-                <h3 class="text-3xl font-display font-bold mb-6">Referências Científicas</h3>
-                <div class="space-y-6">
-                    <div class="p-4 bg-brand-50 rounded-xl border border-brand-100">
-                        <p class="text-xs text-brand-600 font-bold mb-1">REVISTA DE NUTRIÇÃO CLÍNICA (2021)</p>
-                        <p class="text-sm text-gray-700">"Eficácia dos prebióticos XOS na proliferação seletiva de probióticos e marcadores metabólicos."</p>
-                    </div>
-                </div>
-            `,
-            'modal-help': `
-                <h3 class="text-3xl font-display font-bold mb-6">Contato</h3>
-                <div id="contact-form-container">
-                    <form onsubmit="handleContactSubmit(event)" class="space-y-4">
-                        <input type="text" placeholder="Nome" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 outline-none">
-                        <input type="email" placeholder="E-mail" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 outline-none">
-                        <textarea placeholder="Como podemos ajudar?" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 outline-none h-32"></textarea>
-                        <button type="submit" class="w-full py-4 bg-brand-950 text-white font-bold rounded-xl hover:bg-brand-800 shadow-xl transition-all">Enviar Mensagem</button>
-                    </form>
-                </div>
-            `
+            'modal-privacy': '<h3 class="text-2xl font-bold mb-4">Privacidade</h3><p>Protegemos seus dados e não vendemos para terceiros.</p>',
+            'modal-terms': '<h3 class="text-2xl font-bold mb-4">Termos</h3><p>Ao usar o site, você aceita os termos de uso.</p>',
+            'modal-references': '<h3 class="text-2xl font-bold mb-4">Ciência</h3><p>Estudos publicados no Journal of Gastroenterology confirmam a eficácia das cepas Bifidobacterium.</p>',
+            'modal-help': '<h3 class="text-2xl font-bold mb-4">Contato</h3><p>E-mail: support@getbioma.com</p>'
         };
 
         const overlay = document.getElementById('modal-overlay');
@@ -490,40 +384,15 @@
         function openModal(id) {
             contentArea.innerHTML = modalData[id];
             overlay.classList.remove('hidden');
-            setTimeout(() => {
-                overlay.classList.remove('opacity-0');
-                container.classList.remove('scale-95');
-                container.classList.add('scale-100');
-            }, 10);
+            setTimeout(() => { overlay.classList.add('opacity-100'); container.classList.add('scale-100'); }, 10);
         }
 
         function closeModal() {
-            overlay.classList.add('opacity-0');
-            container.classList.remove('scale-100');
-            container.classList.add('scale-95');
-            setTimeout(() => {
-                overlay.classList.add('hidden');
-            }, 300);
+            overlay.classList.remove('opacity-100'); container.classList.remove('scale-100');
+            setTimeout(() => overlay.classList.add('hidden'), 300);
         }
 
-        function handleContactSubmit(e) {
-            e.preventDefault();
-            const formContainer = document.getElementById('contact-form-container');
-            formContainer.innerHTML = `
-                <div class="text-center py-10 space-y-4 animate-fade-in-up">
-                    <div class="w-20 h-20 bg-brand-50 text-brand-500 rounded-full flex items-center justify-center mx-auto">
-                        <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="3" d="M5 13l4 4L19 7"/></svg>
-                    </div>
-                    <h4 class="text-2xl font-bold text-brand-950">Mensagem Enviada!</h4>
-                    <p class="text-gray-500">Nossa equipe entrará em contato em breve.</p>
-                </div>
-            `;
-            setTimeout(closeModal, 2500);
-        }
-
-        overlay.addEventListener('click', (e) => {
-            if (e.target === overlay) closeModal();
-        });
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
     </script>
 </body>
 </html>
